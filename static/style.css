@@ -1,0 +1,52 @@
+/* static/style.css */
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7; /* Light gray background for the body */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Prediction result container */
+#predictionResult {
+    text-align: center;
+    display: none; /* Initially hidden */
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f0f0f0; /* Initial background color */
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation for showing prediction result */
+.show {
+    display: block !important; /* Important to override inline style */
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
