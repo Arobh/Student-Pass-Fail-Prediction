@@ -1,4 +1,4 @@
-# A Ml Project
+# A ML Project
 
 # using Machine Learning
 
