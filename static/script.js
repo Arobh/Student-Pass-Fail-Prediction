@@ -18,7 +18,7 @@ function predict() {
     .catch(error => {
         console.error('Error:', error);
     });
-}
+} 
 
 function displayProbability(probability) {
     const predictionResultDiv = document.getElementById('predictionResult');
